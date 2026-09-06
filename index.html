@@ -1,13 +1,233 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Gaming Hub</title>
-    <link rel="stylesheet" href="/src/index.css">
-  </head>
-  <body class="bg-slate-950 text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEX<span>Gaming</span></div>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#games">Jogos</a>
+        <a href="#favorites">Favoritos</a>
+    </nav>
+
+    <button id="themeBtn">🌙</button>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+    <div>
+        <p class="tag">🎮 NEX GAMING HUB</p>
+
+        <h1>
+            Seu mundo gamer
+            <span>em um só lugar.</span>
+        </h1>
+
+        <p class="description">
+            Descubra jogos, veja detalhes, organize seus favoritos
+            e encontre sua próxima aventura.
+        </p>
+
+        <a href="#games" class="mainBtn">Explorar jogos</a>
+    </div>
+</section>
+
+
+<section id="games" class="gamesSection">
+
+    <div class="sectionTop">
+        <div>
+            <p class="tag">CATÁLOGO</p>
+            <h2>Jogos</h2>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔎 Procurar jogo..."
+        >
+    </div>
+
+    <div id="categories" class="categories"></div>
+
+    <div id="gamesGrid" class="gamesGrid"></div>
+
+</section>
+
+
+<section id="favorites" class="favorites">
+
+    <p class="tag">SEUS JOGOS</p>
+
+    <h2>Favoritos ❤️</h2>
+
+    <div id="favoritesGrid" class="gamesGrid"></div>
+
+</section>
+
+</main>
+
+
+<!-- JANELA DE DETALHES -->
+
+<div id="gameModal" class="modal">
+
+    <div class="modalContent">
+
+        <button id="closeModal" class="closeBtn">✕</button>
+
+        <img id="modalImage" src="" alt="">
+
+        <div class="modalInfo">
+
+            <p id="modalCategory" class="tag"></p>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <button id="modalFavorite" class="mainBtn">
+                ❤️ Favoritar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <strong>NEX Gaming Hub</strong>
+    <p>Projeto open source feito para gamers.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEX<span>Gaming</span></div>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#games">Jogos</a>
+        <a href="#favorites">Favoritos</a>
+    </nav>
+
+    <button id="themeBtn">🌙</button>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+    <div>
+        <p class="tag">🎮 NEX GAMING HUB</p>
+
+        <h1>
+            Seu mundo gamer
+            <span>em um só lugar.</span>
+        </h1>
+
+        <p class="description">
+            Descubra jogos, veja detalhes, organize seus favoritos
+            e encontre sua próxima aventura.
+        </p>
+
+        <a href="#games" class="mainBtn">Explorar jogos</a>
+    </div>
+</section>
+
+
+<section id="games" class="gamesSection">
+
+    <div class="sectionTop">
+        <div>
+            <p class="tag">CATÁLOGO</p>
+            <h2>Jogos</h2>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔎 Procurar jogo..."
+        >
+    </div>
+
+    <div id="categories" class="categories"></div>
+
+    <div id="gamesGrid" class="gamesGrid"></div>
+
+</section>
+
+
+<section id="favorites" class="favorites">
+
+    <p class="tag">SEUS JOGOS</p>
+
+    <h2>Favoritos ❤️</h2>
+
+    <div id="favoritesGrid" class="gamesGrid"></div>
+
+</section>
+
+</main>
+
+
+<!-- JANELA DE DETALHES -->
+
+<div id="gameModal" class="modal">
+
+    <div class="modalContent">
+
+        <button id="closeModal" class="closeBtn">✕</button>
+
+        <img id="modalImage" src="" alt="">
+
+        <div class="modalInfo">
+
+            <p id="modalCategory" class="tag"></p>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <button id="modalFavorite" class="mainBtn">
+                ❤️ Favoritar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <strong>NEX Gaming Hub</strong>
+    <p>Projeto open source feito para gamers.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
